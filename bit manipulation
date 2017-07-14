@@ -1,0 +1,7 @@
+kth bit ...
+(n & ( 1 << k )) >> k
+Here we create a mask, apply the mask to n, and then right shift the masked value to get just the bit we want. We could write it out more fully as:
+
+    int mask =  1 << k;
+    int masked_n = n & mask;
+    int thebit = masked_n >> k;
